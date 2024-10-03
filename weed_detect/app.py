@@ -5,8 +5,10 @@ import numpy as np
 import os
 import json
 import cv2
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 # Load the pre-trained model
 MODEL_PATH = 'weed_classification_model.h5'
